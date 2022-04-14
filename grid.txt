@@ -1,0 +1,57 @@
+there are two properties of grid
+1-one for container(parent):-
+i-display:grid;
+ii-grid-template column(its  define the column inside the container)(koshish karo fraction me istemal karo)
+note that:-grid-tempalte-column=1fr 1fr 1fr=repeat (3,1fr);
+iii-grid-template row(its  define the row inside the container)
+iv-row-gap(its define gap between row)
+v-column-gap(its define gap between column)
+vi-grid-template-column:auto-repeat(auto-fit,300px)
+vii-grid-auto-rows:100px;(this will set the rows automatically 100px by the browse )
+viii-grid auto flows(this is set the direction of grid elements)
+ix-their is a condition that you use grid-tempalte-column(repeat(3,1fr)); and then you add more items so then
+you want that browser add upcoming elements as 20rem  so you used grid-auto-columns:20px;
+x-you can also write like that grid-template-columns: 300px 200px repeat(1,1fr);
+xi-for gallery albumb or many cards type container we must used 
+grid-template-column:repeate(auto-fit,150px);
+xii-grid-template-columns: repeat(auto-fill,minmax(100px,1fr));(ye or bhi empty grid items banata ha)
+xiv-grid-template-columns: repeat(auto-fit,minmax(100px,1fr)) ;(ye mukamal jaga deta ha avalable grid ko)
+xv-    /* grid-column: 1/ span 3;
+    grid-row: 1/3; */
+    /* grid-column: span 3;
+    grid-row: span 3; */
+    grid-column: 1/-1;
+
+    
+
+xvi-grid-auto-flow:dense;(this specifed the property for fill the empty gap and fill the container with density)
+these values are used for the alligment of elements iside grid space
+align-items: start;
+    justify-items: center;
+    /* place-items: start end; */
+
+    just like flex its place of the whole content:-
+    
+
+
+
+throught this we allign the the whole content of elements
+/* justify-content:space-around;
+    align-content: space-around; */
+    place-content:space-between start;
+
+
+
+
+
+
+
+2-second for items(child):-
+
+    align-self: center;
+    justify-self: center;
+    
+    grid-templare-areas:"header header"
+    "content sidebar"
+    "footer footer"
+
